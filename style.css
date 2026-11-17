@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+*{
+  
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+body {
+  background-color: black;
+}
+header{
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+
+}
+.logo {
+  text-decoration: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.8em;
+}
+.navigation a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.8em;
+  font-weight: 600;
+  padding-left: 30px;
+}
+section{
+  padding: 150px 200px;
+}
+.main{
+    width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background: url("img/Développeuse voilée dans son espace code.png") no-repeat;
+
+  background-size: auto 75%;
+  background-position: 85% center;
+  /* background-attachment: fixed; */
+  /* border-bottom: 2px solid #493A52; */
+  border-bottom-width: 80%;
+  position: relative;
+}
+.main h2{
+  color: whitesmoke;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12%;
+  width: 76%;
+  height: 2px;
+  background-color: #493A52;
+}
+.main h2 span{
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 4px;
+  text-decoration-color:#493A52 ;
+}
+.main p{
+  color: whitesmoke;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+.main .contact-me{
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 3px;
+  text-decoration-color:#493A52 ;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  
+}
+.experience{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 60px;
+  padding: 80px 12%;
+  color: whitesmoke;
+}
+.skill h2 {
+  font-size: 2.1em;
+  margin-bottom: 10px;
+}
+.skill p{
+  font-size: 1.2em;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.projects h1 {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+.project img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  
+}
+.project .project-description{
+  color: white;
+}
+.project .project-description h3{
+  margin-top: 15px;
+  margin-bottom: 6px;
+  font-size: 1.2em;
+  font-weight: .8em;
+  letter-spacing: 1px;
+}
+.project .project-description p{
+  font-size: 1em;
+}
+
+.contact-info{
+  color: white;
+}
+
+.content-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.contact-form{
+  display: grid;
+  gap: 25px;
+  align-content: start;
+}
+.contact-form input,
+.contact-form textarea{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  padding: 15px;
+  outline: none;
+}
+.contact-form button{
+  background-color: transparent;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #493A52;
+  letter-spacing: 2px;
+  padding: 15px 0;
+  cursor: pointer;
+  justify-self: end;
+}
+.contact {
+  position: relative;
+  padding: 150px 200px 60px;
+}
+
+.contact::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: #493A52;
+  margin: 60px auto 0;
+
+}
+footer{
+  background-color: black;
+  width: 100%;
+  /* position: fixed; */
+  z-index: 999;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+  margin-bottom: 40px;
+}
+/* TABLETS */
+@media (max-width: 1023px) {
+
+  /* HEADER */
+  header {
+    padding: 10px 30px;
+  }
+
+  .logo {
+    font-size: 1.4em;
+  }
+
+  .navigation a {
+    font-size: 1.2em;
+    padding-left: 15px;
+  }
+
+  /* GENERAL SECTIONS */
+  section {
+    padding: 100px 40px;
+  }
+
+  /* MAIN */
+  .main {
+    background-size: auto 60%;
+    background-position: 90% center;
+  }
+
+  .main h2 {
+    font-size: 2em;
+  }
+
+  .main p {
+    font-size: 1em;
+    max-width: 55%;
+  }
+
+  /* EXPERIENCE */
+  .experience {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  /* PROJECTS */
+  .project-grid {
+    gap: 20px;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 100px 40px 40px;
+  }
+
+  .content-container {
+    gap: 40px;
+  }
+
+  footer {
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 767px) {
+
+  /* HEADER */
+  header {
+    padding: 10px 15px;
+  }
+  .main {
+    background-size: auto 35%;
+    background-position: right bottom;
+  }
+  .logo {
+    font-size: 1em;
+  }
+
+  .navigation a {
+    font-size: 0.8em;
+    padding-left: 8px;
+  }
+
+  /* GENERAL SECTIONS */
+  section {
+    padding: 80px 20px;
+  }
+
+  /* EXPERIENCE */
+  .experience {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+    gap: 30px;
+  }
+
+  /* PROJECTS */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 80px 20px 30px;
+  }
+
+  .content-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
+}
